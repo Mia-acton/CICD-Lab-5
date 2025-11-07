@@ -21,9 +21,13 @@ public class PersonController {
         return service.create(person);
     }
 
-/*
-    @GetMapping public List<Person> all() {
-    return service.findAll();
+    @GetMapping
+    public List<Person> all() {
+        return service.findAll();
     }
-*/
+
+    @GetMapping("/{id}")
+    public Person byEmployeeId(@PathVariable String id) {
+        return service.findByEmployeeId(id);
+    }
 }
