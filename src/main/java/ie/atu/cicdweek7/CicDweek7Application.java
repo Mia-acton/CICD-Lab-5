@@ -39,7 +39,7 @@ public class CicDweek7Application {
                     .department("Finance")
                     .build());
 
-            System.out.println("✅ Sample data loaded into H2 database!");
+            System.out.println("Sample data loaded into H2 database!");
         };
     }
 }

@@ -31,7 +31,7 @@ public class PersonController {
         return service.update(id, person);
     }
 
-    @DeleteMapping("/{id")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable String id) {
         service.delete(id);
